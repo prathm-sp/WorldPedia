@@ -1,0 +1,22 @@
+{
+  "name": "lightmetics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prathm-sp/WorldPedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prathm-sp/WorldPedia/issues"
+  },
+  "homepage": "https://github.com/prathm-sp/WorldPedia#readme",
+  "dependencies": {
+    "firebase": "^9.18.0"
+  }
+}
