@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="root">
+    <header class="header">
+      <div class="sub-header">
+        <img src="assets/logo.png" alt="logo">
+        <p>Best list of all countries with their flags <br /> on whole internate !!!</p>
+        <div class="search-container">
+          <input onkeyup="onInput()" type="text" id="search-text">
+          <button disabled id="search-btn" onclick="onClickSearch()">SEARCH</button>
+        </div>
+      </div>
+    </header>
+    <div class="country-container">
+      <p class="error-message" id="error-message">No seach result found</p>
+      <div class="spinner-border" role="status" id="loading">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="country-card-container" id="country-cards">
+      </div>
+      <div class="modal">
+        <div class="modal-content" id="modal-content">
+        </div>
+      </div>
+      <button class="show-more-btn" onclick="onClickShowMore()" id="show-more-btn">Show more</button>
+    </div>
+    <footer class="footer-container">
+      <div class="fc-container">
+        <div class="footer-sub-container">
+          <div>
+            <img src="assets/logo.png" alt="logo">
+            <p>Worldpedia Inc</p>
+          </div>
+          <div class="right-content">
+            <input placeholder="Enter Email" type="text">
+            <button>SUSCRIBE</button>
+          </div>
+        </div>
+        <p class="reserved-rights">2023 | All Rights Reserved</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
