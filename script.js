@@ -5,7 +5,7 @@ let modal = document.querySelector(".modal");
 let trigger = document.querySelector(".example");
 let closeButton = document.querySelector(".close-button");
 const errorMsgElement = document.getElementById("error-message");
-const loaderElement = document.getElementById("loading");
+const loaderElement = document.getElementById("loader");
 
 let activeCountryDetails = {};
 let data = [];
@@ -28,7 +28,10 @@ async function updateCountryData(url) {
   const _response = await response.json();
   hideloader();
   if (_response && _response.length) {
-    data = _response;
+    const sortedList = _response.sort((a, b) =>
+      a.name.common.localeCompare(b.name.common)
+    );
+    data = [...sortedList];
   } else {
     errorMsgElement.innerHTML = "No result found";
     errorMsgElement.classList.toggle("show-error-message");
